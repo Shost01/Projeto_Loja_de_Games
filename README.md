@@ -53,32 +53,33 @@ Este projeto é ideal para quem está aprendendo a integrar **Spring Boot**, **M
    ```bash
    git clone https://github.com/Shost01/Projeto_Loja_de_Games.git
 
+2. **Pré-requisitos**:
 
-Pré-requisitos:
+- Java versão 8 ou superior.
+- MySQL instalado e configurado.
+- Spring Tools Suite ou outra IDE de sua preferência.
 
-Java versão 8 ou superior.
-MySQL instalado e configurado.
-Spring Tools Suite ou outra IDE de sua preferência.
-Configuração do Banco de Dados:
+3. **Configuração do Banco de Dados**:
 
-Crie um banco de dados no MySQL com o nome de loja_de_games.
-Configure a conexão com o banco de dados no arquivo application.properties:
-properties
-Copiar
-Editar
-spring.datasource.url=jdbc:mysql://localhost:3306/loja_de_games
-spring.datasource.username=root
-spring.datasource.password=senha
-spring.jpa.hibernate.ddl-auto=update
-Compilando e Executando o Projeto:
+- Crie um banco de dados no MySQL com o nome de loja_de_games.
+- Configure a conexão com o banco de dados no arquivo
+   **application.properties**:
+  
+      spring.datasource.url=jdbc:mysql://localhost:3306/loja_de_games
+      spring.datasource.username=root
+      spring.datasource.password=senha
+      spring.jpa.hibernate.ddl-auto=update
 
-Abra o projeto na sua IDE e execute o arquivo Application.java para rodar o servidor Spring Boot.
-O sistema estará acessível via API RESTful (por padrão, na URL http://localhost:8080).
-Testando o CRUD:
+4. **Compilando e Executando o Projeto**:
 
-Utilize ferramentas como Postman ou Insomnia para testar as operações de CRUD:
-POST /games: Adiciona um novo jogo.
-GET /games: Retorna todos os jogos cadastrados.
-GET /games/{id}: Retorna os detalhes de um jogo específico.
-PUT /games/{id}: Atualiza as informações de um jogo.
-DELETE /games/{id}: Exclui um jogo da loja.
+- Abra o projeto na sua IDE e execute o arquivo **Application.java** para rodar o servidor Spring Boot.
+- O sistema estará acessível via API RESTful (por padrão, na URL **http://localhost:8080**).
+
+5. **Testando o CRUD**:
+
+- Utilize ferramentas como Postman ou Insomnia para testar as operações de CRUD:
+**POST /games**: Adiciona um novo jogo.
+**GET /games**: Retorna todos os jogos cadastrados.
+**GET /games/{id}**: Retorna os detalhes de um jogo específico.
+**PUT /games/{id}**: Atualiza as informações de um jogo.
+**DELETE /games/{id}**: Exclui um jogo da loja.
