@@ -61,13 +61,13 @@ Este projeto é ideal para quem está aprendendo a integrar **Spring Boot**, **M
 
 3. **Configuração do Banco de Dados**:
 
-- Crie um banco de dados no MySQL com o nome de loja_de_games.
-- Configure a conexão com o banco de dados no arquivo
+- O banco de dados será criado automaticamente ao iniciar o projeto, desde que a configuração esteja correta no arquivo **application.properties**.
+- Verifique se o arquivo **application.properties** contém as configurações adequadas para o banco de dados
    **application.properties**:
   
       spring.datasource.url=jdbc:mysql://localhost:3306/loja_de_games
       spring.datasource.username=root
-      spring.datasource.password=senha
+      spring.datasource.password=root
       spring.jpa.hibernate.ddl-auto=update
 
 4. **Compilando e Executando o Projeto**:
